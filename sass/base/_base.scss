@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Aero Matics Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Aero Matics Regular'), url('../webfont/Aero Matics Regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Aero Matics Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Aero Matics Italic'), url('../webfont/Aero Matics Italic.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Aero Matics Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Aero Matics Bold'), url('../webfont/Aero Matics Bold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Aero Matics Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Aero Matics Bold Italic'), url('../webfont/Aero Matics Bold Italic.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include adapt(sm) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    color: $dark-grey;
+}
+
+

@@ -1,0 +1,181 @@
+.arconHeader {
+
+  &__background {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba($color-primary,0.9), rgba($color-secondary,0.9)), url(../img/background.jpg);
+  }
+
+  &__header {
+    &--heroBanner {
+      padding: 5rem 0rem 0rem 0rem;
+
+      h2 {
+        font-family: 'Aero Matics Regular';
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    &--heroForm {
+      padding: 3rem 0rem 5rem 0rem;
+
+      h2 {
+        font-family: 'Aero Matics Regular';
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      input, textarea {
+        font-size: 1.5rem;
+        padding: 1rem;
+        height: calc(2em + .75rem + 2px);
+        border: 0px solid transparent;
+        background-color: $grey-background;
+
+        &:focus {
+          background-color: $grey-background;
+        }
+      }
+
+      textarea {
+        height: 7rem;
+      }
+
+      button {
+        font-size: 1.5rem;
+        width: 10rem;
+        background: linear-gradient(to right, rgba($color-primary,0.9), rgba($color-secondary,0.9));
+        padding: 0.75rem;
+        color: $color-white;
+        border-radius: 1rem;
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.arconWhoWeAre {
+  background-color: $grey-background;
+  padding: 5rem 0rem;
+
+  h2 {
+    font-family: 'Aero Matics Regular';
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $color-primary;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  & dl {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: $dark-grey;
+    font-weight: bold;
+
+    & dt {
+      margin-right: 1rem;
+      margin-bottom: 0rem;
+
+      &  img {
+        width: 1.8rem;
+        height: auto;
+      }
+    }
+
+    & dd {
+      margin-bottom: 0rem;
+
+    }
+  }
+}
+
+.arconWhyChooseus {
+  padding: 5rem 0rem;
+
+  h2 {
+    font-family: 'Aero Matics Regular';
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $color-primary;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+.arconOurClients {
+  background-color: $color-primary;
+  padding: 5rem 0rem;
+
+
+  h2 {
+    font-family: 'Aero Matics Regular';
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__sliders {
+    margin-top: 4rem;
+    & .slick-prev:before,
+    & .slick-next:before {
+
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: $color-black;
+      opacity: 1;
+    }
+
+    & .slick-prev {
+      left: -5rem;
+      &:before {
+        content: "\f0d9";
+      }
+    }
+
+    & .slick-next{
+      right: -5rem;
+      &:before {
+        content: "\f0da";
+      }
+    }
+
+    & .slick-slide {
+      height: inherit;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      & img {
+        width: 100%;
+        height: auto;
+        filter: grayscale(100%);
+      }
+      &.slick-center {
+        img {
+          filter: initial;
+        }
+      }
+    }
+  }
+
+}
+
+.arconFooter {
+  background-color: $grey-background;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
