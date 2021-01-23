@@ -178,4 +178,16 @@
   padding: 1rem;
   text-align: center;
   font-size: 1.6rem;
+
+  a {
+    color: inherit;
+    i {
+      color: #0e76a8 ;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 }

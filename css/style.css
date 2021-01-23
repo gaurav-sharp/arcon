@@ -477,3 +477,10 @@ p {
   padding: 1rem;
   text-align: center;
   font-size: 1.6rem; }
+  .arconFooter a {
+    color: inherit; }
+    .arconFooter a i {
+      color: #0e76a8; }
+    .arconFooter a:hover {
+      text-decoration: none;
+      color: inherit; }
